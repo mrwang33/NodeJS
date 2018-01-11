@@ -12,4 +12,4 @@ var se = new Sequelize(config.database,config.username,config.password,{
     }
 });
 
-module.exports.se = se;
+module.exports = se;

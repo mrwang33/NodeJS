@@ -1,7 +1,7 @@
-const sequelize = require('../sequelizeConfig');
+const se = require('../sequelizeConfig');
 const Sequelize = require('sequelize');
 
-var User = sequelize.se.define('user',{
+var user = se.define('user',{
         id: {
             type: Sequelize.BIGINT(100),
             primaryKey: true
@@ -13,4 +13,4 @@ var User = sequelize.se.define('user',{
         freezeTableName: true
     });
 
-module.exports.user = User;
+module.exports = user;
