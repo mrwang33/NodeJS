@@ -4,6 +4,11 @@ function createUser(user) {
     User.create(user).exec();
 }
 
+function getUserByUsername(name) {
+    return User.findOne({name:name}).exec();
+}
+
 module.exports = {
-    createUser : createUser
+    createUser : createUser,
+    getUserByUsername : getUserByUsername
 };
