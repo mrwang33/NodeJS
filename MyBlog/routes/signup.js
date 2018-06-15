@@ -17,7 +17,7 @@ router.post('/',function (req, res, next) {
         password : password
     }
     UserModle.createUser(user);
-    next();
+    res.send("register success");
 })
 
 module.exports = router;
